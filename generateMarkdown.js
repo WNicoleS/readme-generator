@@ -265,7 +265,6 @@ Email: ${email}
     
 ## Test
 ${test}
-  
 ${renderLicenseSection(license)}
   `;
 }
