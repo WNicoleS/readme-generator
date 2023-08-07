@@ -15,5 +15,7 @@ Not necessary
 ## Usage
 The user answers the questions asked when prompted. The answers are then used  to generate a readme and a file is created.
 
+readme demo.webm
+
 ## License
 MIT License
