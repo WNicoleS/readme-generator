@@ -218,7 +218,15 @@ function renderLicenseLink(license) {
 
 function renderLicenseSection(license) {
   let chosenLicense = `${license}`;
-
+    if (chosenLicense === 'no license') {
+    return ``
+  } else {
+    return `
+## License
+${license}
+${renderLicenseLink(license)}
+    `
+  }
 }
 
 function generateMarkdown(data) {
@@ -258,9 +266,7 @@ Email: ${email}
 ## Test
 ${test}
   
-## License
-${license}
-${renderLicenseLink(license)}
+${renderLicenseSection(license)}
   `;
 }
 
